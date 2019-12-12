@@ -11,6 +11,7 @@ body {
 
 .saveBtn {
     border: 1px solid black;
+    background-color: gold;
 }
 
 .container {
@@ -32,3 +33,15 @@ body {
 .time {
     padding: 35px 10px;
 }
+
+.currentTime {
+    text-align: center;
+}
+
+.col-md-1 {
+    border: 1px black solid;
+    background-color: gold;
+}
+
+
+
