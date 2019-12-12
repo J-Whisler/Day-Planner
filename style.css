@@ -16,3 +16,19 @@ body {
 .container {
     margin: 20px auto;
 }
+
+.jumbotron {
+    background-color: cadetblue;
+}
+
+.display-3 {
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+}
+
+.time {
+    padding: 35px 10px;
+}
