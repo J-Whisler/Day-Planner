@@ -41,6 +41,19 @@ body {
 .col-md-1 {
     border: 1px black solid;
     background-color: gold;
+    
+}
+
+.past {
+    background-color: red;
+}
+
+.present {
+    background-color: green;
+}
+
+.future {
+    background-color: yellow;
 }
 
 
