@@ -13,14 +13,33 @@ $(document).ready(function () {
      //  setting the variables to be saved in local storage
         localStorage.setItem(time, text)
 
-    
+            
     })
 
+   function hours () {
+        var currentHour = moment().hours();
+        $('.time-row').each(function () {
+        var hour = $('#time').val()
+
+        if (hour < currentHour) {
+            $(this).addClass('past')
+        } else if (hour === currentHour) {
+            $(this).addClass('present')
+            $(this).removeClass('past')
+        } else {
+            $(this).removeClass('past')
+            $(this).removeClass('present')
+            $(this).addClass('future')
+        }
+
+   })
+
+   hours();
+         
+
+
+
    
-
-
-
-
 
 
 
