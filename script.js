@@ -16,6 +16,8 @@ $(document).ready(function () {
             
     })
 
+
+    // function to set the color of the text area depending on if that hour is in the past, present, or futur
    function hours () {
         var currentHour = moment().hours();
         $('.time-row').each(function () {
@@ -34,9 +36,20 @@ $(document).ready(function () {
 
    })
 
+// call hours function
    hours();
-         
 
+   // setting textarea so it will draw from local storage and the user input will stay in textarea even upon refresh
+         
+   $('#h9 .textarea').val(localStorage.getItem('h9'))
+   $('#h10 .textarea').val(localStorage.getItem('h10'))
+   $('#h11 .textarea').val(localStorage.getItem('h11'))
+   $('#h12 .textarea').val(localStorage.getItem('h12'))
+   $('#h13 .textarea').val(localStorage.getItem('h13'))
+   $('#h14 .textarea').val(localStorage.getItem('h14'))
+   $('#h15 .textarea').val(localStorage.getItem('h15'))
+   $('#h16 .textarea').val(localStorage.getItem('h16'))
+   $('#h17 .textarea').val(localStorage.getItem('h17'))
 
 
    
@@ -46,5 +59,5 @@ $(document).ready(function () {
 
 
 
-
-
+   }
+})
